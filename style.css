@@ -1,0 +1,106 @@
+@font-face {
+  font-family: PlusJakarta;
+  src: url(PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: PlusJakarta;
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #121420;
+}
+
+.global {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 1rem;
+  padding: 2rem;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+.aligner {
+  display: flex;
+  gap: 1rem;
+}
+
+.inputOutput {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.inputOutput label {
+  color: white;
+}
+
+.inputOutput select {
+  padding: 0.3rem;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.inputOutput select:hover {
+  opacity: 80%;
+}
+
+button {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 2px;
+  display: inline-block;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 60%;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+textarea {
+  padding: 0.5rem;
+}
+
+img {
+  cursor: pointer;
+  filter: invert();
+  width: 30px;
+  height: 30px;
+  margin-top: 30px;
+}
+
+img:active {
+  transform: scale(0.9);
+}
