@@ -13,7 +13,7 @@ async function traduzir() {
     headers: {
       "content-type": "application/x-www-form-urlencoded",
       "Accept-Encoding": "application/gzip",
-      "X-RapidAPI-Key": "d081545d6cmsh635c465519430fbp106b5ejsn4f8557db1e5b",
+      "X-RapidAPI-Key": "270e3a683dmsh42fc1c11023312dp1a9b9cjsneec3898b40e8",
       "X-RapidAPI-Host": "google-translate1.p.rapidapi.com",
     },
     body: new URLSearchParams({
